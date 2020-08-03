@@ -1,0 +1,156 @@
+/* ***** General Styles *****  */
+@font-face {
+  font-family: "Haettenschweiler";
+  src: url("/fonts/haettenschweiler-webfont.woff") format("woff");
+}
+
+.body-container {
+  font-family: arial;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+}
+
+.body-container a {
+  text-decoration: none;
+}
+/****** General Styles ******/
+
+/****** Left Container ******/
+.left-container {
+  background-image: url("/images/blue-bg.png");
+  background-repeat: repeat;
+  padding-top: 64px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+}
+
+.profile-title-container {
+  font-family: Haettenschweiler;
+}
+
+.profile-name {
+  color: #c7d3e6;
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+.profile-title {
+  color: #f98229;
+  font-size: 38px;
+  margin-top: 2px;
+  line-height: 30px;
+}
+
+.about-me {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 50px 45px 25px 45px;
+}
+
+.emphasize {
+  color: #c7d3e6;
+}
+
+.profile-links {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile-links li {
+  list-style-type: none;
+}
+
+.profile-links a,
+.home-button {
+  color: #f98229;
+}
+
+.profile-links a:hover,
+.home-button:hover {
+  color: #000000;
+}
+
+.icon-light {
+  color: #ffffff;
+}
+
+.profile-links a:hover .icon-light,
+.home-button:hover .icon-light {
+  color: #f98229;
+}
+
+.home-button {
+  font-size: 42px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.body-container footer {
+  position: fixed;
+  bottom: 0px;
+  width: 320px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/****** Left Container ******/
+
+/****** Right Container ******/
+
+.article-entry,
+.article-content {
+  margin: 20px 50px;
+}
+
+.article-content .content iframe {
+  min-height: 500px !important;
+}
+
+.article-content .twitter-share-button {
+  margin: 10px 0 20px 0;
+  display: inline-block;
+}
+
+.article-entry h5 {
+  font-size: 14px;
+  color: #c9c9c9;
+  margin-top: 3px;
+}
+
+.article-entry h2 {
+  font-size: 26px;
+  color: #1d283c;
+}
+
+.article-content h1 {
+  font-size: 38px;
+  color: #f98229;
+}
+
+@media (max-width: 768px) {
+  .body-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-container {
+    position: relative;
+    padding-bottom: 70px;
+    height: max-content;
+  }
+
+  .body-container footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
