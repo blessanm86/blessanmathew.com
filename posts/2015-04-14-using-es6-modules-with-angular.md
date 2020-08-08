@@ -100,7 +100,7 @@ export default [
 
 You can now use browserify to generate a bundle.js file to include in your html file. The following is the command to install browserify and babelify and generate the bundle.js file.
 
-```console
+```bash
 npm install -g browserify
 npm install babelify
 browserify -d -e app.js -o bundle.js -t [ babelify --modules common]`

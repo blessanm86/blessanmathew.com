@@ -1,11 +1,17 @@
 import Head from "next/head";
+import ReactMarkdown from "react-markdown";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import {
   articleContent as articleContentStyle,
   twitterShareButton as twitterShareButtonStyle,
   content as contentStyle,
 } from "Components/Layout.module.css";
 
-export default ({ post: { title, contentHtml } }) => {
+const CodeBlock = ({ language, value }) => {
+  return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
+};
+
+export default ({ post: { title, content } }) => {
   return (
     <>
       <Head>
@@ -20,9 +26,10 @@ export default ({ post: { title, contentHtml } }) => {
         >
           Tweet
         </a>
-        <div
+        <ReactMarkdown
           className={`${contentStyle} markdown-body`}
-          dangerouslySetInnerHTML={{ __html: contentHtml }}
+          source={content}
+          renderers={{ code: CodeBlock }}
         />
       </article>
     </>
