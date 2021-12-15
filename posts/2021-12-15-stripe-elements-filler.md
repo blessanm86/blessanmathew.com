@@ -3,7 +3,7 @@ title: "Auto fill stripe elements during development"
 date: "2021-12-15"
 ---
 
-If you just want to see the code, here is the [link](https://github.com/blessanm86/stripe-elements-filler) to the repo.
+If you just want to see the code, here is the [**link**](https://github.com/blessanm86/stripe-elements-filler) to the repo.
 
 I work in the payments team of my company and my job involves creating endless customer payment flows for different scenarios. So I have to deal with a lot of forms on a daily basis. Filling out forms to test a flow and especially during development can become very repetitive. So to solve that we created a chrome extention. We simply call it the `dev-tools`.
 
