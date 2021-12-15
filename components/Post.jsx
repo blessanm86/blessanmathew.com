@@ -19,13 +19,6 @@ export default ({ post: { title, content } }) => {
       </Head>
       <article className={articleContentStyle}>
         <h1>{title}</h1>
-        <a
-          href="https://twitter.com/share"
-          className={twitterShareButtonStyle}
-          data-via="blessenm86"
-        >
-          Tweet
-        </a>
         <ReactMarkdown
           className={`${contentStyle} markdown-body`}
           source={content}
