@@ -6,7 +6,7 @@ import readingTime from "reading-time";
 import { marked } from "marked";
 import hljs from "highlight.js";
 
-const postsPath = path.join(__dirname, "../../posts");
+const postsPath = path.join(__dirname, "../../app/posts");
 
 export type Post = {
   title: string;
