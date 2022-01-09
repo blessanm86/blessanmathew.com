@@ -1,7 +1,11 @@
 ---
 title: "Rolled Out My Blog"
 date: "2013-07-27"
+tags: ["general"]
+excerpt: "I've been contemplating for some time about starting a blog. There are a gazillion developer blogs out there, so why should I start one..."
 ---
+
+### Rolled Out My Blog
 
 #### Why another blog?
 

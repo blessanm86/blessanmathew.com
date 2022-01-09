@@ -1,8 +1,11 @@
 ---
-layout: post
 title: "Using ES6 modules with angular"
 date: "2015-04-14"
+tags: ["angular", "javascript"]
+excerpt: "The es6 modules(es6m) spec is now finalized, so I think it is a great time to start using it in our frontend apps. My first experience with es6m was with ember-cli..."
 ---
+
+### Using ES6 modules with angular
 
 The es6 modules(es6m) spec is now finalized, so I think it is a great time to start using it in our frontend apps. My first experience with es6m was with [ember-cli](http://www.ember-cli.com/). It felt a lot more better than using AMD which was the only module format I've used in the frontend.
 
