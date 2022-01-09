@@ -1,9 +1,10 @@
-node_modules
-.idea
+ node_modules
+ .idea
 
-/.cache
-/build
-/public/build
-.env
+ /.cache
+ /build
+ /public/build
+ .env
 
-/app/tailwind.css
+ /app/tailwind.css
+ No newline at end of file

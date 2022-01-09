@@ -6,7 +6,7 @@ import readingTime from "reading-time";
 import { marked } from "marked";
 import hljs from "highlight.js";
 
-const postsPath = path.join(__dirname, "../posts");
+const postsPath = path.join(__dirname, "../../posts");
 
 export type Post = {
   title: string;
@@ -50,7 +50,7 @@ export async function getPosts(tagFilter: string | null) {
 }
 
 export async function getPost(slug: string) {
-  const { content } = parseFrontMatter(
+  const { title, content } = parseFrontMatter(
     path.join(path.join(postsPath, slug + ".mdx"))
   );
 
@@ -61,5 +61,5 @@ export async function getPost(slug: string) {
     },
   });
 
-  return { html: marked.parse(content) };
+  return { title, html: marked.parse(content) };
 }
