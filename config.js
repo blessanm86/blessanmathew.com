@@ -6,7 +6,7 @@ export const headerLinks = [
     children: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-7 w-7"
+        className="w-6 h-6 lg:h-7 lg:w-7"
         viewBox="0 0 20 20"
         fill="currentColor"
       >
@@ -21,7 +21,7 @@ export const headerLinks = [
     title: "Twitter Profile",
     children: (
       <svg
-        className="h-7 w-7"
+        className="w-6 h-6 lg:h-7 lg:w-7"
         fill="currentColor"
         viewBox="0 0 24 24"
         aria-hidden="true"
@@ -36,7 +36,7 @@ export const headerLinks = [
     title: "Github Profile",
     children: (
       <svg
-        className="h-7 w-7"
+        className="w-6 h-6 lg:h-7 lg:w-7"
         fill="currentColor"
         viewBox="0 0 24 24"
         aria-hidden="true"
@@ -55,7 +55,7 @@ export const headerLinks = [
     title: "LinkedIn Profile",
     children: (
       <svg
-        className="w-7 h-7"
+        className="w-6 h-6 lg:h-7 lg:w-7"
         fill="currentColor"
         viewBox="0 0 20 20"
         aria-hidden="true"
