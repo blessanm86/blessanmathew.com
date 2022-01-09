@@ -1,0 +1,29 @@
+---
+title: "Ember.js - List filtering using a multiple selection filter component"
+date: "2014-08-16"
+tags: ["ember", "javascript"]
+excerpt: "Recently I wanted to implement list filtering in one of my side projects. This post detail's how I created a multiple selection filter component..."
+---
+
+### Ember.js - List filtering using a multiple selection filter component
+
+Recently I wanted to implement list filtering in one of my side projects. This post detail's how I created a multiple selection filter component and implement filtering using the filter function passed by the component.
+
+The basic idea for the component is to have a list of options in which a user can select/unselect. If an option is selected, the component should create a filter function and send the filter function to an action. Whoever responds to the action can use the filter function to filter its content.
+The component has 1 property the needs to be set.
+
+`filter-key-path` is the path to the object property in the content array. The value in the path will be used in the filter function for comparison.
+
+Inside the components block template the inputs value is bound to the option value that we use for filtering.
+Whenever you select/unselect an option, we add/remove the option from the `selectedItems` array.
+After that, we create a filter function based on the `selectedItems` and pass that up using the `sendAction` method.
+
+The index controller handles the action and uses the filter function passed in to filter its content.
+
+The code is self explanatory and you can see it in action below.
+
+<iframe src="https://codesandbox.io/embed/emberjs-list-filter-zm6uj?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="emberjs-list-filter"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"/>
