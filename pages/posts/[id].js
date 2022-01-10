@@ -42,7 +42,7 @@ export default ({ post }) => {
       </Head>
       <div
         dangerouslySetInnerHTML={{ __html: post.html }}
-        className="prose prose-a:text-sky-700 hover:prose-a:text-sky-800 prose-lg 2xl:prose-xl max-w-none"
+        className="prose prose-lg 2xl:prose-xl max-w-none prose-a:decoration-pink-800"
       />
     </Layout>
   );

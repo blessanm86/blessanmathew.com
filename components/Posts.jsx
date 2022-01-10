@@ -9,20 +9,20 @@ export default function Posts({ posts }) {
     ) => (
       <article className="flex flex-col gap-2" key={slug}>
         <Link href={`/posts/${slug}`}>
-          <a className="text-xl lg:text-3xl font-medium text-pink-800 hover:underline">
+          <a className="text-2xl lg:text-3xl font-medium text-black hover:underline decoration-pink-800">
             {title}
           </a>
         </Link>
-        <p className="mb-2 text-sm lg:text-base">{excerpt}</p>
+        <p className="mb-2 text-base">{excerpt}</p>
         <div className="flex gap-2">
           {tags && tags.map((tag) => <Tag name={tag} key={tag} />)}
         </div>
-        <div className="flex space-x-1 text-xs lg:text-sm text-gray-500">
+        <div className="flex space-x-1 text-sm text-gray-500">
           <time dateTime={date}>{formattedDate}</time>
           <span aria-hidden="true"> &middot; </span>
           <span>{readingTime}</span>
         </div>
-        {index < posts.length - 1 && <hr className="mt-4 lg:mt-8" />}
+        {index < posts.length - 1 && <hr className="mt-3 lg:mt-8" />}
       </article>
     )
   );

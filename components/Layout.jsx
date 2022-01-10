@@ -6,31 +6,28 @@ export default ({ children }) => (
     <div className="max-w-7xl mx-auto py-4 sm:py-6 lg:py-8 flex flex-col gap-6 lg:gap-12">
       <header>
         <div className="flex items-center space-x-2 lg:space-x-6">
-          <Link href="/">
-            <a title="Home Page">
-              <img
-                className="w-16 h-16 rounded-full lg:w-32 lg:h-32"
-                src="/profile-pic.jpeg"
-                alt="profile-pic"
-              />
-            </a>
-          </Link>
+          {/*<Link href="/">*/}
+          {/*  <a title="Home Page">*/}
+          {/*    <img*/}
+          {/*      className="w-16 h-16 rounded-full lg:w-32 lg:h-32"*/}
+          {/*      src="/profile-pic.jpeg"*/}
+          {/*      alt="profile-pic"*/}
+          {/*    />*/}
+          {/*  </a>*/}
+          {/*</Link>*/}
           <div className="font-medium text-lg leading-6 space-y-1">
             <Link href="/">
               <a title="Home Page">
-                <h1 className=" text-xl lg:text-4xl hover:underline">
+                <h1 className=" text-3xl lg:text-4xl hover:underline decoration-pink-800">
                   Blessan Mathew
                 </h1>
               </a>
             </Link>
-            <p className="text-rose-800 text-sm lg:text-xl">
+            <p className="text-sky-800 text-lg lg:text-xl">
               Senior Software Engineer
               <span className="text-black"> / </span> audibene
             </p>
-            <ul
-              role="list"
-              className="flex space-x-3 lg:space-x-5 text-sky-700"
-            >
+            <ul role="list" className="flex space-x-3">
               {headerLinks.map(({ key, href, title, children }) => (
                 <li key={key}>
                   <a
@@ -38,7 +35,7 @@ export default ({ children }) => (
                     title={title}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-sky-800"
+                    className="hover:text-pink-800"
                   >
                     <span className="sr-only">{title}</span>
                     {children}
@@ -49,7 +46,7 @@ export default ({ children }) => (
           </div>
         </div>
       </header>
-      <main className="flex flex-col gap-5 lg:gap-10">{children}</main>
+      <main className="flex flex-col gap-4 lg:gap-10">{children}</main>
     </div>
   </div>
 );
