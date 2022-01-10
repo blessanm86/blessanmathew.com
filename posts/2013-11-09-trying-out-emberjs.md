@@ -1,8 +1,11 @@
 ---
-layout: post
 title: "Trying Out EmberJS"
 date: "2013-11-09"
+tags: ["ember", "javascript"]
+excerpt: "EmberJS is picking up these days with the release of version 1.0 and it's Ember Data persistance library. In my current company, most of us work with BackboneJS or AngularJS. I saw a presentation..."
 ---
+
+### Trying Out EmberJS
 
 [EmberJS](http://emberjs.com/) is picking up these days with the release of version 1.0 and it's [Ember.Data](https://github.com/emberjs/data) persistance library. In my current company, most of us work with [BackboneJS](http://backbonejs.org/) or [AngularJS](http://angularjs.org/).
 
