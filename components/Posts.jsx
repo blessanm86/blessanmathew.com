@@ -9,7 +9,7 @@ export default function Posts({ posts }) {
     ) => (
       <article className="flex flex-col gap-2" key={slug}>
         <Link href={`/posts/${slug}`}>
-          <a className="text-2xl lg:text-3xl font-medium text-black hover:underline decoration-pink-800">
+          <a className="dark:text-white text-2xl lg:text-3xl font-medium text-black hover:underline decoration-pink-800">
             {title}
           </a>
         </Link>

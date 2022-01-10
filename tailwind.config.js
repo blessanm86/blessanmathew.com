@@ -4,6 +4,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./config.js",
   ],
+  darkMode: "class",
   theme: {
     extend: {},
   },
