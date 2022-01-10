@@ -2,6 +2,7 @@ import Layout from "Components/Layout";
 import { getPosts, getPost } from "Lib/posts";
 import Head from "next/head";
 import "highlight.js/styles/monokai-sublime.css";
+import { domainName } from "../../config";
 
 export async function getStaticPaths() {
   const paths = getPosts();
@@ -17,7 +18,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const post = await getPost(params.id);
+  const post = getPost(params.id);
   return {
     props: {
       post,
@@ -31,6 +32,13 @@ export default ({ post }) => {
       <Head>
         <title>{post.title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:site_name" content="blessanmathew.com" />
+        <meta property="og:description" content={post.excerpt} />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content={`${domainName}/open-graph.png`} />
+        <meta property="og:url" content={`${domainName}/posts/${post.id}`} />
       </Head>
       <div
         dangerouslySetInnerHTML={{ __html: post.html }}

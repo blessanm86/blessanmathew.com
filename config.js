@@ -1,3 +1,5 @@
+export const domainName = `https://blessanmathew.com`;
+
 export const headerLinks = [
   {
     key: "email",
