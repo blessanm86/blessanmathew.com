@@ -74,8 +74,8 @@ export const headerLinks = [
 
 export const tags = {
   general: {
-    backgroundColor: "bg-indigo-100",
-    textColor: "text-indigo-800",
+    backgroundColor: "dark:bg-gray-700 bg-gray-100",
+    textColor: "dark:text-gray-100 text-gray-700",
   },
   javascript: {
     backgroundColor: "bg-yellow-300",

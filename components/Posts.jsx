@@ -9,7 +9,7 @@ export default function Posts({ posts }) {
     ) => (
       <article className="flex flex-col gap-2" key={slug}>
         <Link href={`/posts/${slug}`}>
-          <a className="dark:text-white text-2xl lg:text-3xl font-medium text-black hover:underline decoration-pink-800">
+          <a className="text-pink-700 dark:text-pink-500 text-2xl lg:text-3xl font-medium text-black">
             {title}
           </a>
         </Link>
@@ -22,7 +22,9 @@ export default function Posts({ posts }) {
           <span aria-hidden="true"> &middot; </span>
           <span>{readingTime}</span>
         </div>
-        {index < posts.length - 1 && <hr className="mt-3 lg:mt-8" />}
+        {index < posts.length - 1 && (
+          <hr className="mt-3 lg:mt-8 dark:border-gray-700 border-gray-200" />
+        )}
       </article>
     )
   );

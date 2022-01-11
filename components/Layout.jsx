@@ -30,14 +30,13 @@ export default ({ children }) => {
             <div className="font-medium text-lg leading-6 space-y-1">
               <Link href="/">
                 <a title="Home Page">
-                  <h1 className="dark:text-white text-3xl lg:text-4xl hover:underline decoration-pink-800">
+                  <h1 className="dark:text-white text-3xl lg:text-4xl hover:underline decoration-pink-700">
                     Blessan Mathew
                   </h1>
                 </a>
               </Link>
               <p className="text-sky-800 dark:text-sky-500 text-lg lg:text-xl">
-                Senior Software Engineer
-                <span className="text-black"> / </span> audibene
+                Senior Software Engineer | audibene
               </p>
               <ul role="list" className="dark:text-white flex space-x-3">
                 {headerLinks.map(({ key, href, title, children }) => (
