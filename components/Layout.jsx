@@ -66,7 +66,7 @@ export default ({ children }) => {
               {currentTheme === "dark" ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-10 w-10"
+                  className="h-7 w-7"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -79,7 +79,7 @@ export default ({ children }) => {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-10 w-10"
+                  className="h-7 w-7"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
