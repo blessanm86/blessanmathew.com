@@ -2,6 +2,10 @@ const path = require("path");
 const SOURCE_PATH = path.join(__dirname);
 
 module.exports = {
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.resolve.alias = {
       ...config.resolve.alias,

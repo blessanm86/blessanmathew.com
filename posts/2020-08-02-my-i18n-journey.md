@@ -3,9 +3,10 @@ title: "My i18n Journey"
 date: "2020-08-02"
 tags: ["general"]
 excerpt: "In this post I would like to layout how we handle I18n and L10n in Zalon. This is basically a write up of a presentation I did at a company recently, So it might be a bit heavy on text..."
+description: "This article explains the i18n processes we used at my job."
 ---
 
-### My i18n Journey
+## My i18n Journey
 
 In this post I would like to layout how we handle I18n and L10n in Zalon. This is basically a write up of a presentation I did at a company recently, So it might be a bit heavy on text. If you would rather see the slides, [here you go](https://docs.google.com/presentation/d/1c7Ar5ja0xx9hNuvLOVAmuGRorEc924AbvWRQw3VCiPE/edit#slide=id.g1d669f99c2_0_94).
 

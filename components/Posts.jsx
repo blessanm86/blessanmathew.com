@@ -17,7 +17,7 @@ export default function Posts({ posts }) {
         <div className="flex gap-2">
           {tags && tags.map((tag) => <Tag name={tag} key={tag} />)}
         </div>
-        <div className="flex space-x-1 text-sm text-gray-500">
+        <div className="flex space-x-1 text-sm text-gray-500 dark:text-gray-400">
           <time dateTime={date}>{formattedDate}</time>
           <span aria-hidden="true"> &middot; </span>
           <span>{readingTime}</span>

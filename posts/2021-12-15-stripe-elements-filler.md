@@ -3,9 +3,10 @@ title: "Auto fill stripe elements during development"
 date: "2021-12-15"
 tags: ["general"]
 excerpt: "My job involves creating different customer payment flows for different scenarios. So I have to deal with a lot of forms on a daily basis. Filling out forms to test a flow and especially during development can become very repetitive..."
+description: "This article explains how to auto fill stripe elements during development."
 ---
 
-### Auto fill stripe elements during development
+## Auto fill stripe elements during development
 
 If you just want to see the code, here is the [**link**](https://github.com/blessanm86/stripe-elements-filler) to the repo.
 
@@ -56,11 +57,11 @@ Array.from(document.forms).forEach((form) => formFillers[form.name]());
 
 The code is pretty simple, it loops through all the forms in the page and invokes a form filler function we have mapped to the form name.
 
-#### This will not work with stripe elements
+### This will not work with stripe elements
 
 Each stripe elements is an iframe. We cannot simply manipulate a HTML element in an iframe from the outer frame.
 
-#### all_frames for the win
+### all_frames for the win
 
 In the manifest of the extension you can specify an option called `all_frames` for a content script. Be default chrome will only inject your content script to the top most frame of the page. All the inner frames will be ignored. If you enable `all_frames:true` for your content script, it will be injected into every frame in the page.
 

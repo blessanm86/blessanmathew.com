@@ -7,6 +7,7 @@ export default ({ children }) => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
   const [mounted, setMounted] = useState(false);
+  const nextTheme = currentTheme === "dark" ? "light" : "dark";
 
   useEffect(() => {
     setMounted(true);
@@ -34,7 +35,7 @@ export default ({ children }) => {
                   </h1>
                 </a>
               </Link>
-              <p className="text-sky-800 text-lg lg:text-xl">
+              <p className="text-sky-800 dark:text-sky-500 text-lg lg:text-xl">
                 Senior Software Engineer
                 <span className="text-black"> / </span> audibene
               </p>
@@ -58,9 +59,8 @@ export default ({ children }) => {
           </div>
           {mounted && (
             <button
-              onClick={() =>
-                theme === "dark" ? setTheme("light") : setTheme("dark")
-              }
+              aria-label={`Enable ${nextTheme} mode`}
+              onClick={() => setTheme(nextTheme)}
               className="dark:text-white hover:text-pink-800 dark:hover:text-pink-800"
             >
               {currentTheme === "dark" ? (

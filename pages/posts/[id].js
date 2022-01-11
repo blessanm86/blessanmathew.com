@@ -39,6 +39,10 @@ export default ({ post }) => {
         <meta property="og:type" content="article" />
         <meta property="og:image" content={`${domainName}/open-graph.png`} />
         <meta property="og:url" content={`${domainName}/posts/${post.id}`} />
+        <meta
+          name="description"
+          content={`${post.title} ${post.description}`}
+        />
       </Head>
       <div
         dangerouslySetInnerHTML={{ __html: post.html }}

@@ -3,15 +3,16 @@ title: "Rolled Out My Blog"
 date: "2013-07-27"
 tags: ["general"]
 excerpt: "I've been contemplating for some time about starting a blog. There are a gazillion developer blogs out there, so why should I start one..."
+description: "This articles talks about the tech considerations for rolling out blessanmathew.com."
 ---
 
-### Rolled Out My Blog
+## Rolled Out My Blog
 
-#### Why another blog?
+### Why another blog?
 
 I've been contemplating for some time about starting a blog. There are a gazillion developer blogs out there, so why should I start one? There are numerous occasions where I've been saved by some random developers blog post and from my experience, you do more research when you need to write about something. Those are good enough reasons for me.
 
-#### What to use?
+### What to use?
 
 The next step was to select a blogging platform. I considered going for [Wordpress](http://wordpress.org/) or [Blogger](http://blogger.com/) but I just wanted something very simple. I also wanted it to be hosted on [Github Pages](http://pages.github.com/). So I decided to go for a static site generator. Github pages introduced me to the concept of static site generators. When I googled around I found many players out there in which the prominent one seems to be [Jekyll](http://jekyllrb.com/) which Github Pages uses internally.
 
@@ -21,12 +22,12 @@ So, now I needed to decide what generator I was going to use. [Jekyll](http://je
 
 I kind of read through their whole [documentation](http://jekyllrb.com/docs/home/) and then started a new project. Surprisingly everything just worked. I was mostly worried that I would have to debug Ruby errors and I have no experience with Ruby. But no errors that I couldn't handle came up. Most of the things I needed were built in and for other stuffs like RSS and comments there were blog posts. My experience with Jekyll has been great so far and I recommend it.
 
-#### What did I learn?
+### What did I learn?
 
 I did learn some new stuffs like how to use [Markdown](http://daringfireball.net/projects/markdown/) in a project. I became aware of markdown when I started to write README files for my github repos. I always throught these markdown converters just spit out html that will have all the required styles. I kept asking my self, why arn't my files looking like Github README files on the browser. I felt stupid after realizing that I just needed to include a stylesheet. Well thats how you figure things out.
 
 This blog also gave me a reason to learn how to implement RSS feeds and a commenting system.
 
-#### What's next?
+### What's next?
 
 I'll be blogging about the new stuffs I learn and and my opinions. Well thats it for now.
