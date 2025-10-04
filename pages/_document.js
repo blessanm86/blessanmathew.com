@@ -1,12 +1,11 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          <script async src="https://cdn.splitbee.io/sb.js"></script>
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

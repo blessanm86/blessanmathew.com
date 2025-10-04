@@ -8,10 +8,8 @@ export default function Posts({ posts }) {
       index
     ) => (
       <article className="flex flex-col gap-2" key={slug}>
-        <Link href={`/posts/${slug}`}>
-          <a className="text-pink-700 dark:text-pink-500 text-2xl lg:text-3xl font-medium text-black">
-            {title}
-          </a>
+        <Link href={`/posts/${slug}`} className="text-pink-700 dark:text-pink-500 text-2xl lg:text-3xl font-medium text-black">
+          {title}
         </Link>
         <p className="mb-2 text-base">{excerpt}</p>
         <div className="flex gap-2">

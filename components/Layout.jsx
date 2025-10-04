@@ -28,12 +28,10 @@ export default ({ children }) => {
             {/*  </a>*/}
             {/*</Link>*/}
             <div className="font-medium text-lg leading-6 space-y-1">
-              <Link href="/">
-                <a title="Home Page">
-                  <h1 className="dark:text-white text-3xl lg:text-4xl hover:underline decoration-pink-700">
-                    Blessan Mathew
-                  </h1>
-                </a>
+              <Link href="/" title="Home Page">
+                <h1 className="dark:text-white text-3xl lg:text-4xl hover:underline decoration-pink-700">
+                  Blessan Mathew
+                </h1>
               </Link>
               <p className="text-sky-800 dark:text-sky-500 text-lg lg:text-xl">
                 Senior Software Engineer | audibene
