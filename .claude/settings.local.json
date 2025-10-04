@@ -5,7 +5,8 @@
       "Bash(npm update:*)",
       "Bash(npm install:*)",
       "Bash(npm run build:*)",
-      "Bash(npx prettier:*)"
+      "Bash(npx prettier:*)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
